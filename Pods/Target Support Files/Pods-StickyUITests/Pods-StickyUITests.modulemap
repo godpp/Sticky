@@ -1,0 +1,6 @@
+framework module Pods_StickyUITests {
+  umbrella header "Pods-StickyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

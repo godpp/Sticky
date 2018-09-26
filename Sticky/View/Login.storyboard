@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zhA-F9-RHI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="ycF-ah-Fdd">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" id="zhA-F9-RHI" customClass="LoginVC" customModule="Sticky" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UZz-f9-bkr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wql-Lw-SgT">
+                                <rect key="frame" x="16" y="281" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EUd-Kg-68c"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YUB-1z-l5c">
+                                <rect key="frame" x="16" y="339" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Q1g-Mw-uzm"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COa-Z2-YiB">
+                                <rect key="frame" x="16" y="377" width="343" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="bgn-Od-Sud"/>
+                                </constraints>
+                                <state key="normal" title="로그인"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0n-8P-uwn">
+                                <rect key="frame" x="16" y="434" width="343" height="62"/>
+                                <state key="normal" title="회원가임"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vwr-S4-ycW" firstAttribute="bottom" secondItem="L0n-8P-uwn" secondAttribute="bottom" constant="171" id="5M3-5z-s6R"/>
+                            <constraint firstItem="wql-Lw-SgT" firstAttribute="trailing" secondItem="UZz-f9-bkr" secondAttribute="trailingMargin" id="Bfa-bh-MDD"/>
+                            <constraint firstItem="L0n-8P-uwn" firstAttribute="top" secondItem="COa-Z2-YiB" secondAttribute="bottom" constant="8" symbolic="YES" id="FeC-se-TGB"/>
+                            <constraint firstItem="YUB-1z-l5c" firstAttribute="trailing" secondItem="COa-Z2-YiB" secondAttribute="trailing" id="GPN-DQ-OXH"/>
+                            <constraint firstItem="wql-Lw-SgT" firstAttribute="trailing" secondItem="YUB-1z-l5c" secondAttribute="trailing" id="Guz-hR-tzB"/>
+                            <constraint firstItem="wql-Lw-SgT" firstAttribute="leading" secondItem="YUB-1z-l5c" secondAttribute="leading" id="PiG-Cd-gq2"/>
+                            <constraint firstItem="YUB-1z-l5c" firstAttribute="top" secondItem="wql-Lw-SgT" secondAttribute="bottom" constant="28" id="QDa-Kf-3T9"/>
+                            <constraint firstItem="COa-Z2-YiB" firstAttribute="trailing" secondItem="L0n-8P-uwn" secondAttribute="trailing" id="QvM-hb-1qM"/>
+                            <constraint firstItem="wql-Lw-SgT" firstAttribute="leading" secondItem="UZz-f9-bkr" secondAttribute="leadingMargin" id="Rqs-lA-rDb"/>
+                            <constraint firstItem="YUB-1z-l5c" firstAttribute="leading" secondItem="COa-Z2-YiB" secondAttribute="leading" id="fj0-Cv-abj"/>
+                            <constraint firstItem="wql-Lw-SgT" firstAttribute="top" secondItem="Vwr-S4-ycW" secondAttribute="top" constant="261" id="hXg-dG-tME"/>
+                            <constraint firstItem="COa-Z2-YiB" firstAttribute="top" secondItem="YUB-1z-l5c" secondAttribute="bottom" constant="8" symbolic="YES" id="swg-xS-5RW"/>
+                            <constraint firstItem="COa-Z2-YiB" firstAttribute="leading" secondItem="L0n-8P-uwn" secondAttribute="leading" id="wqw-0f-9uz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vwr-S4-ycW"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="wql-Lw-SgT" id="87X-t1-45p"/>
+                        <outlet property="passwordTextField" destination="YUB-1z-l5c" id="Yf1-7j-jdI"/>
+                        <outlet property="signInButton" destination="COa-Z2-YiB" id="wOf-bL-3HI"/>
+                        <outlet property="signUpButton" destination="L0n-8P-uwn" id="jcb-gV-7gP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cA8-CJ-hGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-52" y="17.541229385307346"/>
+        </scene>
+    </scenes>
+</document>
