@@ -71,6 +71,7 @@ PODS:
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.2.0)
   - leveldb-library (1.20)
+  - lottie-ios (2.5.0)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
     - nanopb/encode (= 0.3.8)
@@ -78,13 +79,16 @@ PODS:
   - nanopb/encode (0.3.8)
   - Protobuf (3.6.1)
   - SnapKit (4.0.0)
+  - TextFieldEffects (1.4.0)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - Firebase/RemoteConfig
+  - lottie-ios
   - SnapKit (~> 4.0.0)
+  - TextFieldEffects
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -101,9 +105,11 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMSessionFetcher
     - leveldb-library
+    - lottie-ios
     - nanopb
     - Protobuf
     - SnapKit
+    - TextFieldEffects
 
 SPEC CHECKSUMS:
   Firebase: 734a4f92957aa6c40e7ae3fda3d9359e1890aa87
@@ -119,10 +125,12 @@ SPEC CHECKSUMS:
   GoogleUtilities: 06b66f9567769a7958db20a92f0128b2843e49d5
   GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
 
-PODFILE CHECKSUM: 8670ca6794eda92580a4bc6f6aead5cbfb681d15
+PODFILE CHECKSUM: f8ed94ef0999858aed297218ad2fff24b0913711
 
 COCOAPODS: 1.5.3

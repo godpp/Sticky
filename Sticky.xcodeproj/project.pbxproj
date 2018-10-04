@@ -25,12 +25,15 @@
 		4C8A205E21542155004396F2 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8A205D21542155004396F2 /* SignUp.storyboard */; };
 		4C8A206121542178004396F2 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A206021542178004396F2 /* SignUpVC.swift */; };
 		4C8A206321555FAB004396F2 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A206221555FAB004396F2 /* Extension.swift */; };
-		4C8A206521556D71004396F2 /* FirebaseDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A206421556D71004396F2 /* FirebaseDataService.swift */; };
-		4C8A206721556E62004396F2 /* ChattingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A206621556E62004396F2 /* ChattingDataModel.swift */; };
 		4C8A206D21567DA0004396F2 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A206C21567DA0004396F2 /* MainVC.swift */; };
-		4C8A20732156B251004396F2 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A20722156B251004396F2 /* ChatVC.swift */; };
-		4C8A2075215785F4004396F2 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A2074215785F4004396F2 /* ChatMessageCell.swift */; };
 		4C8A2077215B9578004396F2 /* TabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A2076215B9578004396F2 /* TabVC.swift */; };
+		4C8A207D215C7832004396F2 /* SeoulNamsanEB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C8A2078215C782F004396F2 /* SeoulNamsanEB.otf */; };
+		4C8A207E215C7832004396F2 /* SeoulNamsanL.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C8A2079215C782F004396F2 /* SeoulNamsanL.otf */; };
+		4C8A207F215C7832004396F2 /* SeoulNamsanB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C8A207A215C7830004396F2 /* SeoulNamsanB.otf */; };
+		4C8A2080215C7832004396F2 /* SeoulNamsanM.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C8A207B215C7831004396F2 /* SeoulNamsanM.otf */; };
+		4C8A2081215C7832004396F2 /* SeoulNamsanvert.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C8A207C215C7831004396F2 /* SeoulNamsanvert.otf */; };
+		4C8A20A3215FD145004396F2 /* heart.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C8A20A2215FD145004396F2 /* heart.json */; };
+		4C8A20A5215FEF9E004396F2 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A20A4215FEF9E004396F2 /* AuthVC.swift */; };
 		4DB6B56A5AE800B132F9EF24 /* Pods_Sticky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7403E8955F94EF5DE8458714 /* Pods_Sticky.framework */; };
 		B0F098C6CE787CF51448C5C5 /* Pods_StickyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6D20AB19ECC6F8565FCBC8 /* Pods_StickyUITests.framework */; };
 /* End PBXBuildFile section */
@@ -76,12 +79,15 @@
 		4C8A205D21542155004396F2 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		4C8A206021542178004396F2 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		4C8A206221555FAB004396F2 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		4C8A206421556D71004396F2 /* FirebaseDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDataService.swift; sourceTree = "<group>"; };
-		4C8A206621556E62004396F2 /* ChattingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingDataModel.swift; sourceTree = "<group>"; };
 		4C8A206C21567DA0004396F2 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
-		4C8A20722156B251004396F2 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
-		4C8A2074215785F4004396F2 /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
 		4C8A2076215B9578004396F2 /* TabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabVC.swift; sourceTree = "<group>"; };
+		4C8A2078215C782F004396F2 /* SeoulNamsanEB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulNamsanEB.otf; sourceTree = "<group>"; };
+		4C8A2079215C782F004396F2 /* SeoulNamsanL.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulNamsanL.otf; sourceTree = "<group>"; };
+		4C8A207A215C7830004396F2 /* SeoulNamsanB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulNamsanB.otf; sourceTree = "<group>"; };
+		4C8A207B215C7831004396F2 /* SeoulNamsanM.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulNamsanM.otf; sourceTree = "<group>"; };
+		4C8A207C215C7831004396F2 /* SeoulNamsanvert.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulNamsanvert.otf; sourceTree = "<group>"; };
+		4C8A20A2215FD145004396F2 /* heart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heart.json; sourceTree = "<group>"; };
+		4C8A20A4215FEF9E004396F2 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		7403E8955F94EF5DE8458714 /* Pods_Sticky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sticky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AC2F7B567F9FB5F8BC247E2 /* Pods-StickyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StickyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StickyTests/Pods-StickyTests.release.xcconfig"; sourceTree = "<group>"; };
 		A0C89F4DC30D652B704DF834 /* Pods_StickyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StickyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +150,12 @@
 		4C8A201B2153F93D004396F2 /* Sticky */ = {
 			isa = PBXGroup;
 			children = (
+				4C8A20A1215FD13B004396F2 /* Lottie */,
+				4C8A207A215C7830004396F2 /* SeoulNamsanB.otf */,
+				4C8A2078215C782F004396F2 /* SeoulNamsanEB.otf */,
+				4C8A2079215C782F004396F2 /* SeoulNamsanL.otf */,
+				4C8A207B215C7831004396F2 /* SeoulNamsanM.otf */,
+				4C8A207C215C7831004396F2 /* SeoulNamsanvert.otf */,
 				4C8A201C2153F93D004396F2 /* AppDelegate.swift */,
 				4C8A201E2153F93D004396F2 /* ViewController.swift */,
 				4C8A206221555FAB004396F2 /* Extension.swift */,
@@ -191,8 +203,6 @@
 		4C8A205621542083004396F2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4C8A206421556D71004396F2 /* FirebaseDataService.swift */,
-				4C8A206621556E62004396F2 /* ChattingDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -220,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				4C8A206021542178004396F2 /* SignUpVC.swift */,
+				4C8A20A4215FEF9E004396F2 /* AuthVC.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -236,10 +247,16 @@
 			children = (
 				4C8A2076215B9578004396F2 /* TabVC.swift */,
 				4C8A206C21567DA0004396F2 /* MainVC.swift */,
-				4C8A20722156B251004396F2 /* ChatVC.swift */,
-				4C8A2074215785F4004396F2 /* ChatMessageCell.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		4C8A20A1215FD13B004396F2 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				4C8A20A2215FD145004396F2 /* heart.json */,
+			);
+			path = Lottie;
 			sourceTree = "<group>";
 		};
 		7ED5C23FC7F249F87F3B7D51 /* Pods */ = {
@@ -373,11 +390,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C8A2080215C7832004396F2 /* SeoulNamsanM.otf in Resources */,
+				4C8A2081215C7832004396F2 /* SeoulNamsanvert.otf in Resources */,
 				4C8A202A2153F942004396F2 /* LaunchScreen.storyboard in Resources */,
 				4C8A2053215400E1004396F2 /* RemoteConfigDefaults.plist in Resources */,
+				4C8A207E215C7832004396F2 /* SeoulNamsanL.otf in Resources */,
 				4C8A205521542074004396F2 /* Login.storyboard in Resources */,
 				4C8A205E21542155004396F2 /* SignUp.storyboard in Resources */,
 				4C8A204F2153FE13004396F2 /* GoogleService-Info.plist in Resources */,
+				4C8A207D215C7832004396F2 /* SeoulNamsanEB.otf in Resources */,
+				4C8A20A3215FD145004396F2 /* heart.json in Resources */,
+				4C8A207F215C7832004396F2 /* SeoulNamsanB.otf in Resources */,
 				4C8A20272153F942004396F2 /* Assets.xcassets in Resources */,
 				4C8A20222153F93D004396F2 /* Main.storyboard in Resources */,
 			);
@@ -449,7 +472,9 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -458,7 +483,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,18 +518,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C8A20A5215FEF9E004396F2 /* AuthVC.swift in Sources */,
 				4C8A201F2153F93D004396F2 /* ViewController.swift in Sources */,
 				4C8A206D21567DA0004396F2 /* MainVC.swift in Sources */,
-				4C8A206521556D71004396F2 /* FirebaseDataService.swift in Sources */,
 				4C8A201D2153F93D004396F2 /* AppDelegate.swift in Sources */,
 				4C8A205B215420C0004396F2 /* LoginVC.swift in Sources */,
 				4C8A206321555FAB004396F2 /* Extension.swift in Sources */,
 				4C8A2077215B9578004396F2 /* TabVC.swift in Sources */,
-				4C8A20732156B251004396F2 /* ChatVC.swift in Sources */,
 				4C8A206121542178004396F2 /* SignUpVC.swift in Sources */,
-				4C8A2075215785F4004396F2 /* ChatMessageCell.swift in Sources */,
 				4C8A20252153F93D004396F2 /* Sticky.xcdatamodeld in Sources */,
-				4C8A206721556E62004396F2 /* ChattingDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

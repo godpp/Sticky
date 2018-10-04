@@ -8,17 +8,17 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class SignUpVC: UIViewController {
     
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
-    @IBOutlet var confirmTextField: UITextField!
+    @IBOutlet var nicknameTextField: UITextField!
     @IBOutlet var doneButton: UIButton!
     
     var email: String?
     var password: String?
-    var confirmPassword: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,15 +31,19 @@ extension SignUpVC {
     func textFieldDataSetting() {
         email = bindingString(emailTextField.text)
         password = bindingString(passwordTextField.text)
-        confirmPassword = bindingString(confirmTextField.text)
     }
     
     @objc func signUpButtonAction(){
         
         textFieldDataSetting()
         
-        Auth.auth().createUser(withEmail: bindingString(email), password: bindingString(confirmPassword)) { (authResult, error) in
-            
+        Auth.auth().createUser(withEmail: bindingString(email), password: bindingString(password)) { (user, error) in
+            let uid = self.bindingString(user?.user.uid)
+            let nickname = self.bindingString(self.nicknameTextField.text)
+            Database.database().reference().child("users").child(uid).setValue(["name": nickname], withCompletionBlock: { (error, ref) in
+                let authVC = self.storyboard?.instantiateViewController(withIdentifier: "AuthVC") as! AuthVC
+                self.present(authVC, animated: false, completion: nil)
+            })
         }
     }
 }

@@ -6,10 +6,17 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SeoulNamsanB.otf">
+            <string>SeoulNamsanB</string>
+        </array>
+        <array key="SeoulNamsanEB.otf">
+            <string>SeoulNamsanEB</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--LoginVC-->
         <scene sceneID="ycF-ah-Fdd">
@@ -19,57 +26,93 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wql-Lw-SgT">
-                                <rect key="frame" x="16" y="281" width="343" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NuE-i1-lhf">
+                                <rect key="frame" x="10" y="416" width="355" height="93"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COa-Z2-YiB">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="hlA-Ec-aS2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SeoulNamsanB" family="SeoulNamsan" pointSize="17"/>
+                                        <state key="normal" title="로그인">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0n-8P-uwn">
+                                        <rect key="frame" x="0.0" y="60" width="355" height="33"/>
+                                        <fontDescription key="fontDescription" name="SeoulNamsanB" family="SeoulNamsan" pointSize="17"/>
+                                        <state key="normal" title="회원가입">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O3O-js-bPR" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="50" y="258" width="275.5" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="EUd-Kg-68c"/>
+                                    <constraint firstAttribute="height" constant="50" id="XEf-G0-q1c"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" name="SeoulNamsanB" family="SeoulNamsan" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YUB-1z-l5c">
-                                <rect key="frame" x="16" y="339" width="343" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Q1g-Mw-uzm"/>
-                                </constraints>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hbu-1I-mrq" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="50" y="328" width="275.5" height="50"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" name="SeoulNamsanB" family="SeoulNamsan" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COa-Z2-YiB">
-                                <rect key="frame" x="16" y="377" width="343" height="49"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="bgn-Od-Sud"/>
-                                </constraints>
-                                <state key="normal" title="로그인"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0n-8P-uwn">
-                                <rect key="frame" x="16" y="434" width="343" height="62"/>
-                                <state key="normal" title="회원가임"/>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Sticky&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5K-26-0NH">
+                                <rect key="frame" x="152" y="170" width="71" height="24"/>
+                                <fontDescription key="fontDescription" name="SeoulNamsanEB" family="SeoulNamsan" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.87450980389999999" green="0.86274509799999999" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Vwr-S4-ycW" firstAttribute="bottom" secondItem="L0n-8P-uwn" secondAttribute="bottom" constant="171" id="5M3-5z-s6R"/>
-                            <constraint firstItem="wql-Lw-SgT" firstAttribute="trailing" secondItem="UZz-f9-bkr" secondAttribute="trailingMargin" id="Bfa-bh-MDD"/>
-                            <constraint firstItem="L0n-8P-uwn" firstAttribute="top" secondItem="COa-Z2-YiB" secondAttribute="bottom" constant="8" symbolic="YES" id="FeC-se-TGB"/>
-                            <constraint firstItem="YUB-1z-l5c" firstAttribute="trailing" secondItem="COa-Z2-YiB" secondAttribute="trailing" id="GPN-DQ-OXH"/>
-                            <constraint firstItem="wql-Lw-SgT" firstAttribute="trailing" secondItem="YUB-1z-l5c" secondAttribute="trailing" id="Guz-hR-tzB"/>
-                            <constraint firstItem="wql-Lw-SgT" firstAttribute="leading" secondItem="YUB-1z-l5c" secondAttribute="leading" id="PiG-Cd-gq2"/>
-                            <constraint firstItem="YUB-1z-l5c" firstAttribute="top" secondItem="wql-Lw-SgT" secondAttribute="bottom" constant="28" id="QDa-Kf-3T9"/>
-                            <constraint firstItem="COa-Z2-YiB" firstAttribute="trailing" secondItem="L0n-8P-uwn" secondAttribute="trailing" id="QvM-hb-1qM"/>
-                            <constraint firstItem="wql-Lw-SgT" firstAttribute="leading" secondItem="UZz-f9-bkr" secondAttribute="leadingMargin" id="Rqs-lA-rDb"/>
-                            <constraint firstItem="YUB-1z-l5c" firstAttribute="leading" secondItem="COa-Z2-YiB" secondAttribute="leading" id="fj0-Cv-abj"/>
-                            <constraint firstItem="wql-Lw-SgT" firstAttribute="top" secondItem="Vwr-S4-ycW" secondAttribute="top" constant="261" id="hXg-dG-tME"/>
-                            <constraint firstItem="COa-Z2-YiB" firstAttribute="top" secondItem="YUB-1z-l5c" secondAttribute="bottom" constant="8" symbolic="YES" id="swg-xS-5RW"/>
-                            <constraint firstItem="COa-Z2-YiB" firstAttribute="leading" secondItem="L0n-8P-uwn" secondAttribute="leading" id="wqw-0f-9uz"/>
+                            <constraint firstItem="hbu-1I-mrq" firstAttribute="width" secondItem="O3O-js-bPR" secondAttribute="width" id="12G-gt-Vin"/>
+                            <constraint firstItem="hbu-1I-mrq" firstAttribute="height" secondItem="O3O-js-bPR" secondAttribute="height" id="JB0-h6-4p0"/>
+                            <constraint firstItem="hbu-1I-mrq" firstAttribute="leading" secondItem="O3O-js-bPR" secondAttribute="leading" id="RBd-xL-fE8"/>
+                            <constraint firstItem="O3O-js-bPR" firstAttribute="centerX" secondItem="UZz-f9-bkr" secondAttribute="centerX" id="Rvr-Tf-6wd"/>
+                            <constraint firstItem="O3O-js-bPR" firstAttribute="top" secondItem="H5K-26-0NH" secondAttribute="bottom" constant="64" id="UZI-KY-VtS"/>
+                            <constraint firstItem="hbu-1I-mrq" firstAttribute="top" secondItem="O3O-js-bPR" secondAttribute="bottom" constant="20" id="VBR-cK-v63"/>
+                            <constraint firstItem="H5K-26-0NH" firstAttribute="centerX" secondItem="UZz-f9-bkr" secondAttribute="centerX" id="Znc-ai-9Bs"/>
+                            <constraint firstItem="Vwr-S4-ycW" firstAttribute="trailing" secondItem="NuE-i1-lhf" secondAttribute="trailing" constant="10" id="e37-Kj-tgL"/>
+                            <constraint firstItem="hbu-1I-mrq" firstAttribute="trailing" secondItem="O3O-js-bPR" secondAttribute="trailing" id="jZV-ZM-q7T"/>
+                            <constraint firstItem="NuE-i1-lhf" firstAttribute="top" secondItem="hbu-1I-mrq" secondAttribute="bottom" constant="38" id="rzw-VT-Kml"/>
+                            <constraint firstItem="H5K-26-0NH" firstAttribute="top" secondItem="Vwr-S4-ycW" secondAttribute="top" constant="150" id="sdP-KI-1lX"/>
+                            <constraint firstItem="O3O-js-bPR" firstAttribute="leading" secondItem="Vwr-S4-ycW" secondAttribute="leading" constant="50" id="uPp-uQ-4Jh"/>
+                            <constraint firstItem="NuE-i1-lhf" firstAttribute="centerX" secondItem="UZz-f9-bkr" secondAttribute="centerX" id="zN1-3Z-0EV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Vwr-S4-ycW"/>
                     </view>
                     <connections>
-                        <outlet property="emailTextField" destination="wql-Lw-SgT" id="87X-t1-45p"/>
-                        <outlet property="passwordTextField" destination="YUB-1z-l5c" id="Yf1-7j-jdI"/>
+                        <outlet property="emailTextField" destination="O3O-js-bPR" id="qMo-Xv-QQA"/>
+                        <outlet property="passwordTextField" destination="hbu-1I-mrq" id="cO0-zy-Zg3"/>
                         <outlet property="signInButton" destination="COa-Z2-YiB" id="wOf-bL-3HI"/>
                         <outlet property="signUpButton" destination="L0n-8P-uwn" id="jcb-gV-7gP"/>
                     </connections>

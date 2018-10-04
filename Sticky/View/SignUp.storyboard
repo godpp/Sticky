@@ -6,10 +6,17 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SeoulNamsanEB.otf">
+            <string>SeoulNamsanEB</string>
+        </array>
+        <array key="SeoulNamsanM.otf">
+            <string>SeoulNamsanM</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Sign UpVC-->
         <scene sceneID="AGv-1f-jUE">
@@ -19,80 +26,135 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akf-gu-vZG">
-                                <rect key="frame" x="40" y="106" width="45" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnB-Y1-Nls">
-                                <rect key="frame" x="40" y="162" width="59" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호 확인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fw7-m1-NAz">
-                                <rect key="frame" x="40" y="239" width="93" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iwR-wF-5wU">
-                                <rect key="frame" x="139" y="97" width="220" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SHR-LC-5TF">
-                                <rect key="frame" x="139" y="157" width="220" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uoF-XV-IVr">
-                                <rect key="frame" x="139" y="234" width="220" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="T2g-fI-BtO">
+                                <rect key="frame" x="30" y="202" width="315" height="190"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="이메일" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iwR-wF-5wU" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="qc8-Xg-cWP"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="SeoulNamsanM" family="SeoulNamsan" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="닉네임" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uoF-XV-IVr" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="0.0" y="70" width="315" height="50"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="SeoulNamsanM" family="SeoulNamsan" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SHR-LC-5TF" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="0.0" y="140" width="315" height="50"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="SeoulNamsanM" family="SeoulNamsan" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEh-rS-LPf">
-                                <rect key="frame" x="40" y="318" width="319" height="30"/>
-                                <state key="normal" title="완료"/>
+                                <rect key="frame" x="30" y="432" width="315" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="aW2-eJ-SLZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SeoulNamsanEB" family="SeoulNamsan" pointSize="17"/>
+                                <state key="normal" title="다음">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.87450980389999999" green="0.86274509799999999" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="SHR-LC-5TF" firstAttribute="leading" secondItem="uoF-XV-IVr" secondAttribute="leading" id="4wP-EP-m9B"/>
-                            <constraint firstItem="qnB-Y1-Nls" firstAttribute="leading" secondItem="Fw7-m1-NAz" secondAttribute="leading" id="5EF-r5-ApE"/>
-                            <constraint firstItem="iwR-wF-5wU" firstAttribute="top" secondItem="D4y-1A-a5z" secondAttribute="top" constant="77" id="Bmt-OA-6OY"/>
-                            <constraint firstItem="SHR-LC-5TF" firstAttribute="top" secondItem="iwR-wF-5wU" secondAttribute="bottom" constant="30" id="DW1-0y-j0Z"/>
-                            <constraint firstItem="Fw7-m1-NAz" firstAttribute="centerY" secondItem="uoF-XV-IVr" secondAttribute="centerY" id="GL4-8z-ihS"/>
-                            <constraint firstItem="akf-gu-vZG" firstAttribute="leading" secondItem="qnB-Y1-Nls" secondAttribute="leading" id="Ju2-UP-w5a"/>
-                            <constraint firstItem="akf-gu-vZG" firstAttribute="leading" secondItem="D4y-1A-a5z" secondAttribute="leading" constant="40" id="LB4-eq-xHM"/>
-                            <constraint firstItem="jEh-rS-LPf" firstAttribute="centerY" secondItem="L1w-mD-Fno" secondAttribute="centerY" id="Mrn-qR-Gpe"/>
-                            <constraint firstItem="Fw7-m1-NAz" firstAttribute="leading" secondItem="jEh-rS-LPf" secondAttribute="leading" id="Roh-VD-Kb2"/>
-                            <constraint firstItem="SHR-LC-5TF" firstAttribute="trailing" secondItem="uoF-XV-IVr" secondAttribute="trailing" id="Rzt-UK-AMa"/>
-                            <constraint firstItem="uoF-XV-IVr" firstAttribute="top" secondItem="SHR-LC-5TF" secondAttribute="bottom" constant="47" id="TH9-MO-d84"/>
-                            <constraint firstItem="uoF-XV-IVr" firstAttribute="trailing" secondItem="jEh-rS-LPf" secondAttribute="trailing" id="V9X-8b-iCl"/>
-                            <constraint firstItem="uoF-XV-IVr" firstAttribute="leading" secondItem="Fw7-m1-NAz" secondAttribute="trailing" constant="6" id="fcX-Af-nXR"/>
-                            <constraint firstItem="akf-gu-vZG" firstAttribute="bottom" secondItem="iwR-wF-5wU" secondAttribute="bottom" id="k2G-Gp-KcJ"/>
-                            <constraint firstItem="qnB-Y1-Nls" firstAttribute="centerY" secondItem="SHR-LC-5TF" secondAttribute="centerY" id="rwQ-jB-i3y"/>
-                            <constraint firstItem="iwR-wF-5wU" firstAttribute="leading" secondItem="SHR-LC-5TF" secondAttribute="leading" id="x37-aS-R0K"/>
-                            <constraint firstItem="iwR-wF-5wU" firstAttribute="trailing" secondItem="L1w-mD-Fno" secondAttribute="trailingMargin" id="xv8-Rl-jAW"/>
-                            <constraint firstItem="iwR-wF-5wU" firstAttribute="trailing" secondItem="SHR-LC-5TF" secondAttribute="trailing" id="yAC-WD-1y4"/>
+                            <constraint firstItem="D4y-1A-a5z" firstAttribute="trailing" secondItem="T2g-fI-BtO" secondAttribute="trailing" constant="30" id="0m0-Nz-D9P"/>
+                            <constraint firstItem="T2g-fI-BtO" firstAttribute="centerX" secondItem="L1w-mD-Fno" secondAttribute="centerX" id="7Cz-Ub-c99"/>
+                            <constraint firstItem="T2g-fI-BtO" firstAttribute="top" secondItem="D4y-1A-a5z" secondAttribute="top" constant="182" id="WW2-16-QYW"/>
+                            <constraint firstItem="jEh-rS-LPf" firstAttribute="top" secondItem="SHR-LC-5TF" secondAttribute="bottom" constant="40" id="gN1-5z-SiU"/>
+                            <constraint firstItem="jEh-rS-LPf" firstAttribute="trailing" secondItem="T2g-fI-BtO" secondAttribute="trailing" id="rhN-AM-pby"/>
+                            <constraint firstItem="jEh-rS-LPf" firstAttribute="leading" secondItem="T2g-fI-BtO" secondAttribute="leading" id="zDk-Xf-JP7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="D4y-1A-a5z"/>
                     </view>
                     <connections>
-                        <outlet property="confirmTextField" destination="uoF-XV-IVr" id="e8f-Hy-BJl"/>
                         <outlet property="doneButton" destination="jEh-rS-LPf" id="bMG-YP-wOr"/>
                         <outlet property="emailTextField" destination="iwR-wF-5wU" id="Oco-gp-OeX"/>
-                        <outlet property="passwordTextField" destination="SHR-LC-5TF" id="Uh4-eP-AZs"/>
+                        <outlet property="nicknameTextField" destination="uoF-XV-IVr" id="loQ-kJ-ndQ"/>
+                        <outlet property="passwordTextField" destination="SHR-LC-5TF" id="7j9-An-m7f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eUI-Da-PoX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85.599999999999994" y="128.18590704647679"/>
+            <point key="canvasLocation" x="95" y="127"/>
+        </scene>
+        <!--AuthVC-->
+        <scene sceneID="KRe-aZ-R3K">
+            <objects>
+                <viewController storyboardIdentifier="AuthVC" id="28C-sB-xry" customClass="AuthVC" customModule="Sticky" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="prB-qg-y8s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UOT-Ss-TXC">
+                                <rect key="frame" x="58" y="212" width="245" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="인증번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rk6-NF-v3b">
+                                <rect key="frame" x="58" y="167" width="59" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1231231" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yja-1t-KWa">
+                                <rect key="frame" x="156" y="166" width="63" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87450980389999999" green="0.86274509799999999" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="wsb-B3-HxG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O6E-Wd-p6i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="735" y="126"/>
         </scene>
     </scenes>
 </document>

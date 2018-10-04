@@ -13,7 +13,10 @@ target 'Sticky' do
     pod 'Firebase/RemoteConfig'
     pod 'Firebase/Auth'
     pod 'Firebase/Database'
-
+    
+    pod 'TextFieldEffects'
+    pod 'lottie-ios'
+    
   target 'StickyTests' do
     inherit! :search_paths
     # Pods for testing
